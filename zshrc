@@ -54,7 +54,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-#export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin:/Users/jordan/bin:/Users/jordan/dev/android-sdk-macosx/platform-tools:/Users/jordan/dev/scala-2.10.2/bin:/Users/jordan/bin/sbt:/Users/jordan/bin:/Users/jordan/dev/android-sdk-macosx/tools:/Applications/acquia-drupal/drush:/Users/jordan/dev/pebble-dev/arm-cs-tools/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin:/Users/jordan/bin:/Users/jordan/dev/android-sdk-macosx/platform-tools:/Users/jordan/dev/scala-2.10.2/bin:/Users/jordan/bin/sbt:/Users/jordan/bin:/Users/jordan/dev/android-sdk-macosx/tools:/Applications/acquia-drupal/drush"
+#export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin:~/bin:~/dev/android-sdk-macosx/platform-tools:~/dev/scala-2.10.2/bin:~/bin/sbt:~/bin:~/dev/android-sdk-macosx/tools:/Applications/acquia-drupal/drush:~/dev/pebble-dev/arm-cs-tools/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin:~/bin:~/dev/android-sdk-macosx/platform-tools:~/dev/scala-2.10.2/bin:~/bin/sbt:~/bin:~/dev/android-sdk-macosx/tools:/Applications/acquia-drupal/drush"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -82,7 +82,7 @@ alias la='ls -A'
 alias l='ls -CF'
 alias c='clear'
 alias virtualhost='sudo virtualhost.sh'
-alias adm='/Users/jordan/dev/android-sdk-macosx/tools/monitor'
+alias adm='~/dev/android-sdk-macosx/tools/monitor'
 
 # Todo.txt Alias Stuff
 alias t='todo.sh'
@@ -93,17 +93,17 @@ alias todols='todo ls'
 alias tododo='todo do'
 
 # Custom binaries
-export PATH=$PATH:"/Users/jordan/bin"
+export PATH=$PATH:"~/bin"
 
 # Android SDK
-export PATH=$PATH:"/Users/jordan/dev/android-sdk-macosx/platform-tools"
-export PATH=$PATH:"/Users/jordan/dev/android-sdk-macosx/tools"
+export PATH=$PATH:"~/dev/android-sdk-macosx/platform-tools"
+export PATH=$PATH:"~/dev/android-sdk-macosx/tools"
 
 # Scala binaries
-export PATH=$PATH:"/Users/jordan/dev/scala-2.10.2/bin"
+export PATH=$PATH:"~/dev/scala-2.10.2/bin"
 
 # Pebble SDK
-export PATH=$PATH:"/Users/jordan/dev/pebble-dev/arm-cs-tools/bin"
+export PATH=$PATH:"~/dev/pebble-dev/arm-cs-tools/bin"
 
 # ALL the bins!
 export PATH=$PATH:"/usr/local/sbin"
@@ -113,8 +113,8 @@ export PATH=$PATH:"/usr/sbin"
 export PATH=$PATH:"/sbin"
 export PATH=$PATH:"/usr/local/bin"
 export PATH=$PATH:"/opt/X11/bin"
-export PATH=$PATH:"/Users/jordan/bin"
-export PATH=$PATH:"/Users/jordan/bin/sbt"
+export PATH=$PATH:"~/bin"
+export PATH=$PATH:"~/bin/sbt"
 
 # Git
 export PATH=$PATH:"/usr/local/git/bin"
