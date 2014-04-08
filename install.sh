@@ -12,20 +12,33 @@ files="zshrc oh-my-zsh vim vimrc"    # list of files/folders to symlink in homed
 
 ##########
 
-# create dotfiles_old in homedir
-echo "Creating $olddir for backup of any existing dotfiles in ~"
-mkdir -p $olddir
-echo "...done"
+if [ -z $1 ]; then
 
-# change to the dotfiles directory
-echo "Changing to the $dir directory"
-cd $dir
-echo "...done"
+    # create dotfiles_old in homedir
+    echo "Creating $olddir for backup of any existing dotfiles in ~"
+    mkdir -p $olddir
+    echo "...done"
 
-# move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks
-for file in $files; do
+    # change to the dotfiles directory
+    echo "Changing to the $dir directory"
+    cd $dir
+    echo "...done"
+
+    # move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks
     echo "Moving any existing dotfiles from ~ to $olddir"
-    mv ~/.$file ~/dotfiles_old/
     echo "Creating symlink to $file in home directory."
-    ln -s $dir/$file ~/.$file
-done
+    for file in $files; do
+        mv ~/.$file $olddir/
+        ln -s $dir/$file ~/.$file
+    done
+    echo "...done"
+
+elif [ $1 == "rm" ]; then
+    echo "Removing symlinks and replacing any dotfile backups"
+    for file in $files; do
+        rm ~/.$file
+        mv $olddir/.$file ~/
+    done
+    echo "...done"
+    exit 0
+fi
