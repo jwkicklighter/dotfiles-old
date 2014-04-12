@@ -121,3 +121,6 @@ export PATH=$PATH:"/usr/local/git/bin"
 
 # Drupal Drush
 export PATH=$PATH:"/Applications/acquia-drupal/drush"
+
+# NodeJS
+export PATH=$PATH:"/usr/local/bin/node"
