@@ -5,7 +5,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="dstufft"
+ZSH_THEME="powerline"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -48,7 +48,7 @@ ZSH_THEME="dstufft"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git git-flow osx github)
+plugins=(osx git git-flow git-extras github ruby rvm rails sublime wd bundler cap docker gem node npm)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -82,7 +82,11 @@ alias la='ls -A'
 alias l='ls -CF'
 alias c='clear'
 alias virtualhost='sudo virtualhost.sh'
-alias adm='~/dev/android-sdk-macosx/tools/monitor'
+alias androiddevicemonitor='~/dev/android-sdk-macosx/tools/monitor'
+alias szshrc='source ~/.zshrc'
+
+# Git Alias Stuff
+alias gs='git status'
 
 # Todo.txt Alias Stuff
 alias t='todo.sh'
@@ -92,8 +96,15 @@ alias todoa='todo a'
 alias todols='todo ls'
 alias tododo='todo do'
 
-# Custom binaries
+# ALL the bins!
+export PATH="/usr/local/bin":$PATH
+export PATH=$PATH:"/usr/local/sbin"
+export PATH=$PATH:"/usr/bin"
+export PATH=$PATH:"/usr/sbin"
+export PATH=$PATH:"/bin"
+export PATH=$PATH:"/sbin"
 export PATH=$PATH:"~/bin"
+export PATH=$PATH:"~/bin/sbt"
 
 # Android SDK
 export PATH=$PATH:"~/dev/android-sdk-macosx/platform-tools"
@@ -104,17 +115,6 @@ export PATH=$PATH:"~/dev/scala-2.10.2/bin"
 
 # Pebble SDK
 export PATH=$PATH:"~/dev/pebble-dev/arm-cs-tools/bin"
-
-# ALL the bins!
-export PATH=$PATH:"/usr/local/sbin"
-export PATH=$PATH:"/usr/bin"
-export PATH=$PATH:"/bin"
-export PATH=$PATH:"/usr/sbin"
-export PATH=$PATH:"/sbin"
-export PATH=$PATH:"/usr/local/bin"
-export PATH=$PATH:"/opt/X11/bin"
-export PATH=$PATH:"~/bin"
-export PATH=$PATH:"~/bin/sbt"
 
 # Git
 export PATH=$PATH:"/usr/local/git/bin"

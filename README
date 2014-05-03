@@ -2,4 +2,10 @@ Finally got around to storing my dotfiles in a repository, and did it in a fairl
 
 The install script will backup any dotfiles before replacing them. They are moved to ~/dotfiles_old. Then the dotfiles found in this repository will be symlinked in ~/. To use, navigate to this repository and run "./install.sh" from the terminal. To undo, simply run "./install.sh rm" from the terminal. (If you are not permitted to run the script, then you may need to add execute permissions with "chmod +x install.sh")
 
+oh-my-zsh may need to be installed separately.
+
+Install iTerm theme from ~/dotfiles/themes. Select a powerline font in terminal preferences (for both ASCII and non-ASCII characters).
+
+Make sure that Vim Powerline patched font is installed (see Powerline for vim for more info), and that the terminal is using 256-colors mode with export TERM=\"xterm-256color\"".
+
 I got most of the inspiration, and the install script, from this blog post: http://blog.smalleycreative.com/tutorials/using-git-and-github-to-manage-your-dotfiles/

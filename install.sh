@@ -6,9 +6,11 @@
 
 ########## Variables
 
-dir=~/dotfiles                    # dotfiles directory
-olddir=~/dotfiles_old             # old dotfiles backup directory
+dir=~/dotfiles                       # dotfiles directory
+olddir=~/dotfiles_old                # old dotfiles backup directory
 files="zshrc oh-my-zsh vim vimrc"    # list of files/folders to symlink in homedir
+fonts="fonts"
+fontdir="/Library/Fonts"
 
 ##########
 
@@ -32,6 +34,24 @@ if [ -z $1 ]; then
         ln -s $dir/$file ~/.$file
     done
     echo "...done"
+
+    # install fonts
+    echo "Installing fonts"
+    cd fonts
+    for font in *; do
+        cp "$font" "$fontdir/$font"
+    done
+    cd ..
+    echo "...done"
+
+    # symlink zsh theme
+    echo "Creating symlink to zsh theme."
+    ln -f themes/powerline.zsh-theme ~/.oh-my-zsh/themes/powerline.zsh-theme
+    echo "...done"
+
+    echo ""
+    echo "Please see $dir/README for the next steps."
+
 
 elif [ $1 == "rm" ]; then
     echo "Removing symlinks and replacing any dotfile backups"
