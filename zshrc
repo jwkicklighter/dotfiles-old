@@ -76,14 +76,19 @@ source $ZSH/oh-my-zsh.sh
 
 ## CUSTOM STUFF ##
 
+
+# Ruby Things
+eval "$(rbenv init -)"
+
 # Alias Stuff
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 alias c='clear'
 alias virtualhost='sudo virtualhost.sh'
-alias androiddevicemonitor='~/dev/android-sdk-macosx/tools/monitor'
-alias szshrc='source ~/.zshrc'
+alias androiddevicemonitor='$HOME/dev/android-sdk-macosx/tools/monitor'
+alias szshrc='source $HOME/.zshrc'
+#alias snap='$HOME/.cabal/bin/snap'
 
 # Git Alias Stuff
 alias gs='git status'
@@ -103,18 +108,24 @@ export PATH=$PATH:"/usr/bin"
 export PATH=$PATH:"/usr/sbin"
 export PATH=$PATH:"/bin"
 export PATH=$PATH:"/sbin"
-export PATH=$PATH:"~/bin"
-export PATH=$PATH:"~/bin/sbt"
+export PATH=$PATH:"$HOME/bin"
+export PATH=$PATH:"$HOME/bin/sbt"
+
+# Cabal bins
+# export PATH=$PATH:"$HOME/.cabal/bin"
+
+# Haskell bins
+export PATH=$PATH:"/Library/Haskell/bin"
 
 # Android SDK
-export PATH=$PATH:"~/dev/android-sdk-macosx/platform-tools"
-export PATH=$PATH:"~/dev/android-sdk-macosx/tools"
+export PATH=$PATH:"$HOME/dev/android-sdk-macosx/platform-tools"
+export PATH=$PATH:"$HOME/dev/android-sdk-macosx/tools"
 
 # Scala binaries
-export PATH=$PATH:"~/dev/scala-2.10.2/bin"
+export PATH=$PATH:"$HOME/dev/scala-2.10.2/bin"
 
 # Pebble SDK
-export PATH=$PATH:"~/dev/pebble-dev/arm-cs-tools/bin"
+export PATH=$PATH:"$HOME/dev/pebble-dev/arm-cs-tools/bin"
 
 # Git
 export PATH=$PATH:"/usr/local/git/bin"
@@ -124,3 +135,8 @@ export PATH=$PATH:"/Applications/acquia-drupal/drush"
 
 # NodeJS
 export PATH=$PATH:"/usr/local/bin/node"
+
+# Ruby
+export PATH=$PATH:"/usr/local/Cellar/ruby/2.1.1_1/lib/ruby/gems/2.1.0/gems/bundler-1.6.2/bin"
+export PATH=$PATH:"/usr/local/Cellar/ruby/2.1.1_1/lib/ruby/gems/2.1.0/gems/sass-3.2.19/bin"
+export PATH=$PATH:"/usr/local/Cellar/ruby/2.1.1_1/lib/ruby/gems/2.1.0/gems/compass-0.12.6/bin"
