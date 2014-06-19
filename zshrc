@@ -76,10 +76,6 @@ source $ZSH/oh-my-zsh.sh
 
 ## CUSTOM STUFF ##
 
-
-# Ruby Things
-eval "$(rbenv init -)"
-
 # Alias Stuff
 alias ll='ls -alF'
 alias la='ls -A'
@@ -89,6 +85,12 @@ alias virtualhost='sudo virtualhost.sh'
 alias androiddevicemonitor='$HOME/dev/android-sdk-macosx/tools/monitor'
 alias szshrc='source $HOME/.zshrc'
 #alias snap='$HOME/.cabal/bin/snap'
+
+# Mac Specific Alias Stuff
+cleanopenwith='/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -kill -r -domain local -domain user;killall Finder;echo "Open With has been rebuilt, Finder will relaunch"'
+
+# Grunt Alias Stuff
+alias grserve='grunt server'
 
 # Git Alias Stuff
 alias gs='git status'
@@ -100,6 +102,12 @@ alias todo='todo.sh'
 alias todoa='todo a'
 alias todols='todo ls'
 alias tododo='todo do'
+
+# Docker Stuff
+export DOCKER_HOST=tcp://192.168.59.103:2375
+
+# Make Java 1.6 Default
+#export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/1.6/Home
 
 # ALL the bins!
 export PATH="/usr/local/bin":$PATH
@@ -115,28 +123,21 @@ export PATH=$PATH:"$HOME/bin/sbt"
 # export PATH=$PATH:"$HOME/.cabal/bin"
 
 # Haskell bins
-export PATH=$PATH:"/Library/Haskell/bin"
+#export PATH=$PATH:"/Library/Haskell/bin"
 
 # Android SDK
-export PATH=$PATH:"$HOME/dev/android-sdk-macosx/platform-tools"
-export PATH=$PATH:"$HOME/dev/android-sdk-macosx/tools"
+#export PATH=$PATH:"$HOME/dev/android-sdk-macosx/platform-tools"
+#export PATH=$PATH:"$HOME/dev/android-sdk-macosx/tools"
 
 # Scala binaries
-export PATH=$PATH:"$HOME/dev/scala-2.10.2/bin"
-
-# Pebble SDK
-export PATH=$PATH:"$HOME/dev/pebble-dev/arm-cs-tools/bin"
-
-# Git
-export PATH=$PATH:"/usr/local/git/bin"
+#export PATH=$PATH:"$HOME/dev/scala-2.10.2/bin"
 
 # Drupal Drush
-export PATH=$PATH:"/Applications/acquia-drupal/drush"
+#export PATH=$PATH:"/Applications/acquia-drupal/drush"
 
-# NodeJS
-export PATH=$PATH:"/usr/local/bin/node"
+#Dart
+#export PATH=$PATH:"/Users/jordan/dev/dart/dart-sdk/bin"
 
 # Ruby
-export PATH=$PATH:"/usr/local/Cellar/ruby/2.1.1_1/lib/ruby/gems/2.1.0/gems/bundler-1.6.2/bin"
-export PATH=$PATH:"/usr/local/Cellar/ruby/2.1.1_1/lib/ruby/gems/2.1.0/gems/sass-3.2.19/bin"
-export PATH=$PATH:"/usr/local/Cellar/ruby/2.1.1_1/lib/ruby/gems/2.1.0/gems/compass-0.12.6/bin"
+export PATH=$PATH:"$HOME/.rvm/bin"
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
