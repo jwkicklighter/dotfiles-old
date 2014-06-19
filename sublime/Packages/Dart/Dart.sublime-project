@@ -1,0 +1,14 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "."
+		}
+	],
+
+	"SublimeLinter":
+	{
+		"@python": 3.4
+	}
+}

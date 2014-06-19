@@ -1,0 +1,30 @@
+{
+	"installed_packages":
+	[
+		"AngularJS",
+		"Autoprefixer",
+		"BracketHighlighter",
+		"Case Conversion",
+		"Color Highlighter",
+		"Dart",
+		"Dockerfile Syntax Highlighting",
+		"Emmet",
+		"Git",
+		"Git Conflict Resolver",
+		"GitGutter",
+		"Gitignore",
+		"Grunt",
+		"Hayaku - tools for writing CSS faster",
+		"jQuery",
+		"jQueryDocs",
+		"MacTerminal",
+		"ParentalControl",
+		"SCSS",
+		"Sublimall",
+		"SublimeCodeIntel",
+		"SublimeLinter",
+		"Theme - amCoder",
+		"WordPress",
+		"Yesod"
+	]
+}

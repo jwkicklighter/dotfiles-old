@@ -1,0 +1,10 @@
+{
+	"color_scheme": "Packages/User/Monokai Low-Profile Gray (SL).tmTheme",
+	"font_face": "Monaco",
+	"font_size": 11.0,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"theme": "amCoder Gray.sublime-theme"
+}
