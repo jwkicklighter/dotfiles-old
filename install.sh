@@ -35,11 +35,12 @@ if [ -z $1 ]; then
     done
     echo "...done"
 
-    echo "Creating symlink for Sublime Packages."
+    echo "Creating symlink for Sublime Packages/tools."
     mv ~/Library/Application\ Support/Sublime\ Text\ 3/Packages $olddir/Sublime\ Text\ 3\ Packages
     ln -s $dir/sublime/Packages/ ~/Library/Application\ Support/Sublime\ Text\ 3/Packages
     mv ~/Library/Application\ Support/Sublime\ Text\ 3/Installed\ Packages $olddir/Sublime\ Text\ 3\ Installed\ Packages
     ln -s $dir/sublime/Installed\ Packages/ ~/Library/Application\ Support/Sublime\ Text\ 3/Installed\ Packages
+    ln -s "Application/Sublime Text.app/Contents/SharedSupport/bin/subl" ~/bin/sublime
     echo "...done"
 
     # install fonts
