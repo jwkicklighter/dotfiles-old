@@ -135,8 +135,11 @@ export PATH=$PATH:"$HOME/bin/sbt"
 # Drupal Drush
 #export PATH=$PATH:"/Applications/acquia-drupal/drush"
 
-#Dart
+# Dart
 #export PATH=$PATH:"/Users/jordan/dev/dart/dart-sdk/bin"
+
+# NPM
+export PATH=$PATH:"/usr/local/share/npm/bin"
 
 # Ruby
 export PATH=$PATH:"$HOME/.rvm/bin"
