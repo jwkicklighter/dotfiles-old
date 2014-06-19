@@ -36,13 +36,13 @@ if [ -z $1 ]; then
     echo "...done"
 
     # install fonts
-    echo "Installing fonts"
-    cd fonts
-    for font in *; do
-        cp "$font" "$fontdir/$font"
-    done
-    cd ..
-    echo "...done"
+    # echo "Installing fonts"
+    # cd fonts
+    # for font in *; do
+    #     cp "$font" "$fontdir/$font"
+    # done
+    # cd ..
+    # echo "...done"
 
     # symlink zsh theme
     echo "Creating symlink to zsh theme."
