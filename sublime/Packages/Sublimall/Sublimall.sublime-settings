@@ -2,7 +2,7 @@
     ////////////////////////////
     //// Sublimall settings ////
     ////////////////////////////
-    "api_root_url": "https://sublimall.org",
+    "api_root_url": "http://sublimall.org",
     "api_upload_url": "/api/upload/",
     "api_retrieve_url": "/api/retrieve/",
     "api_max_package_size_url": "/api/max-package-size/",
@@ -10,14 +10,14 @@
     ///////////////////////
     //// User settings ////
     ///////////////////////
-    "email": "jwkicklighter@gmail.com",
-    "api_key": "0691d5dff38b750daa2e5adf993e1a465d6406d1",
+    "email": "",
+    "api_key": "",
     // Paths must be: "Packages/SublimeCodeIntel" or "Installed Packages/Sublimall"
     "ignore_packages": [],
     // Set true if you want to exclude packages managed by Package Control
     "exclude_from_package_control": false,
     // Set false if you don't want to encrypt your configuration
-    "encrypt": false,
+    "encrypt": true,
     // Upload timeout in seconds
     "http_upload_timeout": 240,
     // Download timeout in seconds
@@ -26,7 +26,7 @@
     // OSX: "/usr/local/Cellar/p7zip/*/bin/7za"
     // Linux: "/usr/bin/7za" or "/usr/bin/p7zip"
     // But you can overwrite it here.
-    "7za_path": "/usr/local/bin/7za",
+    "7za_path": "",
     // HTTP proxy to use for HTTP requests. Support for authentication
     // Examples: http://user:password@host:port or http://ip:port
     "http_proxy": "",

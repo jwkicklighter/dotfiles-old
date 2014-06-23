@@ -1,11 +1,10 @@
 Thank you for installing Sublimall!
-Sublimall is the way to synchronize your SublimelText configuration everywhere.
+Sublimall is the way to synchronize your SublimeText configuration everywhere.
 
 First steps
 ===========
 
 In order to use Sublimall you just need one dependency, 7zip installed on your system.
-You have to know that Sublimall is in alpha stage, so please backup your files before.
 
 Give me feedback!
 
