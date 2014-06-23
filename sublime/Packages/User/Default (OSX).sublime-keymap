@@ -1,15 +1,4 @@
 [
-	{
-		"keys": ["super+backspace"],
-		"command": "run_macro_file",
-		"args": {
-			"file": "Packages/Default/Delete Line.sublime-macro"
-			},
-		"keys": ["h", "h"], "command": "exit_insert_mode",
-			"context":
-			[
-				{ "key": "setting.command_mode", "operand": false },
-				{ "key": "setting.is_widget", "operand": false }
-			]
-	}
+	{ "keys": ["super+backspace"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
+	{ "keys": ["h", "h"], "command": "exit_insert_mode","context": [ { "key": "setting.command_mode", "operand": false }, { "key": "setting.is_widget", "operand": false }] }
 ]
