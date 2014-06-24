@@ -35,14 +35,6 @@ if [ -z $1 ]; then
     done
     echo "...done"
 
-    echo "Creating symlink for Sublime Packages/tools."
-    mv ~/Library/Application\ Support/Sublime\ Text\ 3/Packages $olddir/Sublime\ Text\ 3\ Packages
-    ln -s $dir/sublime/Packages/ ~/Library/Application\ Support/Sublime\ Text\ 3/Packages
-    mv ~/Library/Application\ Support/Sublime\ Text\ 3/Installed\ Packages $olddir/Sublime\ Text\ 3\ Installed\ Packages
-    ln -s $dir/sublime/Installed\ Packages/ ~/Library/Application\ Support/Sublime\ Text\ 3/Installed\ Packages
-    ln -s "Application/Sublime Text.app/Contents/SharedSupport/bin/subl" ~/bin/sublime
-    echo "...done"
-
     # install fonts
     # echo "Installing fonts"
     # cd fonts
@@ -55,6 +47,13 @@ if [ -z $1 ]; then
     # symlink zsh theme
     echo "Creating symlink to zsh theme."
     ln -f themes/powerline.zsh-theme ~/.oh-my-zsh/themes/powerline.zsh-theme
+    echo "...done"
+
+    # symlink zsh plugins
+    echo "Creating symlink to zsh plugins."
+    for plugin in $dir/oh-my-zsh-plugins/*; do
+        ln -s $plugin $dir/oh-my-zsh/plugins
+    done
     echo "...done"
 
     echo ""

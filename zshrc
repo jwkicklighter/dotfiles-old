@@ -48,7 +48,7 @@ ZSH_THEME="powerline"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(osx git git-flow git-extras github ruby rvm rails sublime wd bundler cap docker gem node npm)
+plugins=(osx git git-flow git-extras github ruby rvm rails sublime wd bundler cap docker gem node npm zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
