@@ -59,6 +59,10 @@ if [ -z $1 ]; then
     echo ""
     echo "Please see $dir/README for the next steps."
 
+    echo "Disabling press & hold on Mac for Sublime Text 3"
+    defaults write com.sublimetext.3 ApplePressAndHoldEnabled -bool false
+    echo "...done"
+
 
 elif [ $1 == "rm" ]; then
     echo "Removing symlinks and replacing any dotfile backups"
