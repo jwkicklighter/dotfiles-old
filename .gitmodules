@@ -7,3 +7,6 @@
 [submodule "oh-my-zsh-plugins/zsh-syntax-highlighting"]
 	path = oh-my-zsh-plugins/zsh-syntax-highlighting
 	url = git@github.com:zsh-users/zsh-syntax-highlighting.git
+[submodule "oh-my-zsh-plugins/grunt"]
+	path = oh-my-zsh-plugins/grunt
+	url = https://github.com/yonchu/grunt-zsh-completion.git
