@@ -42,6 +42,7 @@ alias c='clear'
 alias virtualhost='sudo virtualhost.sh'
 alias androiddevicemonitor='$HOME/dev/android-sdk-macosx/tools/monitor'
 alias szshrc='source $HOME/.zshrc'
+alias b2d='boot2docker'
 #alias snap='$HOME/.cabal/bin/snap'
 
 # Mac Specific Alias Stuff
