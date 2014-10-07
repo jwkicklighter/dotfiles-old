@@ -2,6 +2,7 @@
 export ZSH=$HOME/.oh-my-zsh
 export DOTFILES=$HOME/dotfiles
 export ZSH_PLUGINS=$DOTFILES/zsh-plugins
+export TODOIST_API=`cat $HOME/.todoist_api`
 
 ZSH_THEME="powerline"
 
@@ -55,12 +56,19 @@ alias grserve='grunt server'
 alias gs='git status'
 
 # Todo.txt Alias Stuff
-alias t='todo.sh'
-alias tc='clear; todo'
-alias todo='todo.sh'
-alias todoa='todo a'
-alias todols='todo ls'
-alias tododo='todo do'
+# alias t='todo.sh'
+# alias tc='clear; todo'
+# alias todo='todo.sh'
+# alias todoa='todo a'
+# alias todols='todo ls'
+# alias tododo='todo do'
+
+alias todoist='$DOTFILES/apps/todoist-cli/todoist.py'
+alias t='todoist'
+alias tp='todoist p ls'
+alias tls='todoist ls'
+alias tlst='todoist ls tod' #Todoist List Today
+alias tlsn='todoist ls tom' #Todoist List Next day
 
 # Docker Stuff
 export DOCKER_HOST=tcp://192.168.59.103:2375
