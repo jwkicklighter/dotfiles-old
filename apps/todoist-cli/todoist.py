@@ -4,13 +4,14 @@ import json
 import colortrans
 import sys
 import todoist_functions
+import os
 
 COLOR_OUTPUT = False
 
 class Todoist:
 
     #token = "<TOKEN FROM TODOIST USER SETTINGS MENU"
-    token = "7335f97c1c877d3d1e584518752f7fb86faecccc"
+    token = os.environ.get('TODOIST_API')
     todoist_api_url = "http://todoist.com/API/"
 
     """ get all project """
