@@ -2,7 +2,7 @@
 export ZSH=$HOME/.oh-my-zsh
 export DOTFILES=$HOME/dotfiles
 export ZSH_PLUGINS=$DOTFILES/zsh-plugins
-export TODOIST_API=`cat $HOME/.todoist_api`
+#export TODOIST_API=`cat $HOME/.todoist_api`
 
 ZSH_THEME="powerline"
 
