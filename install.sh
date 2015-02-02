@@ -46,13 +46,13 @@ if [ -z $1 ]; then
 
     # symlink zsh theme
     echo "Creating symlink to zsh theme."
-    ln -f themes/powerline.zsh-theme ~/.oh-my-zsh/themes/powerline.zsh-theme
+    ln -f themes/powerline.zsh-theme ~/.oh-my-zsh/custom/themes/powerline.zsh-theme
     echo "...done"
 
     # symlink zsh plugins
     echo "Creating symlink to zsh plugins."
     for plugin in $dir/oh-my-zsh-plugins/*; do
-        ln -s $plugin $dir/oh-my-zsh/plugins
+        ln -s $plugin $dir/oh-my-zsh/custom/plugins
     done
     echo "...done"
 
